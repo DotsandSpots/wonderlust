@@ -275,18 +275,18 @@
                     <input type="tel" id="phonenumber" name="phonenumber" autocomplete="tel" required>
                 </div>
                 <fieldset id="preferred-contact">
-                <legend>Preferred Contact Method<span>*</span></legend>
+                <legend>Preferred Contact Method<span required="required">*</span></legend>
                     <div> 
-                        <input>
-                        <label>Email</label>
+                        <input type="radio" id="contact-email" name="contact" value="email" />
+                        <label for="contact-email">Email</label>
                     </div>
                     <div>
-                        <input>
-                        <label>Text</label>
+                        <input type="radio" id="contact-text" name="contact" value="text" />
+                        <label for="contact-text">Text</label>
                     </div>
                     <div>
-                        <input>
-                        <label>Phone</label>
+                        <input type="radio" id="contact-phone" name="contact" value="phone" />
+                        <label for="contact-phone">Phone</label>
                     </div>
                 </fieldset>
                 <fieldset id="destination">
@@ -305,7 +305,7 @@
                     </select>
                 </fieldset>
                 <fieldset id="travelTime">
-                    <legend>Travel Time<span>*</span></legend>
+                    <legend>Travel Time<span class="required">*</span></legend>
                     <select id="select-travel-time">
                         <option>Choose</option>
                         <option>Fall</option>
@@ -315,7 +315,7 @@
                         <option>Flexible</option>
                     </select>
                 </fieldset>
-                <input>
+                <input type="submit" id="submit" value="Submit">
             
         </section>
         <section id="legal">
